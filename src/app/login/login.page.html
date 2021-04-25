@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>.
+  <ion-grid class="ion-grid-padding-sm">
+    <ion-row>
+        <ion-icon name="globe-outline"></ion-icon>
+      <ion-text color="dark">.
+        <h1>Logar na plataforma</h1>
+      </ion-text>
+      <ion-col size="12">
+        <ion-item lines="inset">
+          <ion-label position="stacked">Seu e-mail</ion-label>
+          <ion-input id="email" type="email" [(ngModel)]="user" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></ion-input>
+        </ion-item>
+        <ion-item lines="inset">
+          <ion-label position="stacked">Sua senha</ion-label>
+          <ion-input id="senha" type="password" minlength="8" maxlength="15" required [(ngModel)]='senha'></ion-input>
+        </ion-item>
+        <ion-col class="but">
+          <ion-button (click)="acessar()">
+            <ion-icon slot="start" name="log-in"> Acessar </ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="12">
+          <ion-text class="create" color="primary">.
+            <a href="http://"><h5>Esqueci a senha</h5></a>.
+            <a href="http://"><h5>Inscreva-se na plataforma</h5></a>
+          </ion-text>
+        </ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
